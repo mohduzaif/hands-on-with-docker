@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>** Table Generator **</h1>
+
+        <form method="POST">
+            <input type="number" name="number" placeholder="Enter a number" required>
+            <button type="submit">Generate Table</button>
+        </form>
+
+        {% if table %}
+        <div class="table-box">
+            <h2>Result</h2>
+            {% for row in table %}
+                <p>{{ row }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+
+</body>
+</html>
