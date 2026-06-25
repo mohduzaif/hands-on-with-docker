@@ -79,11 +79,10 @@ The goal of this repository is to build a strong understanding of Docker by crea
 
 ---
 
----
-
 ## 👨‍💻 Author  
 **Mohd Uzaif**  
 🎓 *M.Tech (AI & ML), Jamia Millia Islamia University*   
+
 ---
 
 ## 📜 License
